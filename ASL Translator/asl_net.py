@@ -24,8 +24,7 @@ class Net(nn.Module):
         self.fc2 = nn.Linear(100, 64)
         self.leak = nn.LeakyReLU()
         self.drop = nn.Dropout(p=0.3)
-        self.fc3 = nn.Linear(64, 25)
-        
+        self.fc3 = nn.Linear(64, 24)
 
     def forward(self, x):
         '''defines the forward prop algorithm'''
